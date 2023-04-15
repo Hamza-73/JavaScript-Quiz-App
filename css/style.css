@@ -101,6 +101,10 @@
             cursor: pointer;
         }
 
+        #playBtn:hover{
+            transform: scale(1.08);
+        }
+
         li {
             list-style: none;
         }
