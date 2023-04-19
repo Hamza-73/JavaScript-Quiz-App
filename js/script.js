@@ -150,6 +150,10 @@ function disableButton(id) {
     })
 }
 
+function startAgain(){
+    location.href = 'start.html'
+}
+
 function showScore() {
 
     document.getElementById('heading').innerHTML = `Result`;
@@ -158,6 +162,7 @@ function showScore() {
                 <h1 id='questions'>You scored ${score} out of ${questions.length * 10}</h1>
                 <p>You ${score < 30 ? 'Loose' : 'Won'}</p>
                 <p>Time Taken ${pad(min)} : ${pad(sec)} </p>
+                <button id='playBtn' onclick="startAgain()" style='display:block'>PlayAgain</button>
             </div>
     `;
 }
